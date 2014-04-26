@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/trivia_title"
+        android:text="@string/trivia_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:height="50dp"    
+        android:textColorLink="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:text="@string/quiz_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trivia_title"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:height="50dp"     
+        android:textColorLink="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/challenge_title"
+        android:text="@string/challenge_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quiz_title"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:height="50dp"      
+        android:textColorLink="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+         />
+
+     <Button
+        android:id="@+id/start"
+        android:text="@string/start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/challenge_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:height="60dp"      
+        android:textColorLink="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:onClick="startGame" />
+
+     <Button
+         android:id="@+id/rules"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/start"
+         android:layout_below="@+id/start"
+         android:layout_marginTop="17dp"
+         android:fontFamily="sans-serif"
+         android:height="60dp"
+         android:onClick="rulesMenu"
+         android:text="@string/rules"
+         android:textColorLink="@android:color/white"
+         android:textSize="30sp"
+         android:textStyle="bold|italic" />
+
+</RelativeLayout>

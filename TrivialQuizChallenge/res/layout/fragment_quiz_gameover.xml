@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.gianmarcoortolani.trivialquizchallenge.activities.QuizGameoverActivity"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp" >
+
+         <Button
+             android:id="@+id/returnMenu"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="113dp"
+             android:height="60dp"      
+        	android:textSize="30sp"
+             android:text="@string/returnMenu"
+             android:onClick="returnMenu" />
+
+         <RatingBar
+             android:id="@+id/ratingBar1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/textResult"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="72dp"
+             android:numStars="5"
+             android:rating="0.0"
+             android:stepSize="1.0" />
+
+         <TextView
+             android:id="@+id/textResult"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="40dp"
+             android:text="@string/textResult"
+             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
